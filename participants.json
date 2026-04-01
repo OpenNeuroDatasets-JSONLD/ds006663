@@ -1,6 +1,24 @@
 {
     "sex": {
-        "Description": "biological sex of the animal, e.g., m or f"
+        "Description": "biological sex of the animal, e.g., m or f",
+        "Annotations": {
+            "IsAbout": {
+                "TermURL": "nb:Sex",
+                "Label": "Sex"
+            },
+            "VariableType": "Categorical",
+            "Levels": {
+                "F": {
+                    "TermURL": "snomed:248152002",
+                    "Label": "Female"
+                },
+                "M": {
+                    "TermURL": "snomed:248153007",
+                    "Label": "Male"
+                }
+            },
+            "MissingValues": []
+        }
     },
     "group": {
         "Description": "experimental genotype assignment, KO = mutant missing C3aR1 or wt (wildtype, as found in the wild, not genetically altered)"
@@ -22,5 +40,15 @@
     },
     "litter_size": {
         "Description": "how many animals in the litter. can be informative for brain size in adolesence since determines milk availability"
+    },
+    "participant_id": {
+        "Description": "",
+        "Annotations": {
+            "IsAbout": {
+                "TermURL": "nb:ParticipantID",
+                "Label": "Participant ID"
+            },
+            "VariableType": "Identifier"
+        }
     }
 }
